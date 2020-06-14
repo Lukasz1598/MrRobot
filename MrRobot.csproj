@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEE400C1-F1AE-40E4-92D3-EBC1A2C205DE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MrRobot</RootNamespace>
+    <AssemblyName>MrRobot</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.12.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.12.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator.cs" />
+    <Compile Include="Adres.cs" />
+    <Compile Include="Baza.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baza.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCart.Designer.cs">
+      <DependentUpon>FormCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategory.Designer.cs">
+      <DependentUpon>FormCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditProfile.Designer.cs">
+      <DependentUpon>FormEditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogIn.Designer.cs">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainMenu.Designer.cs">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderDetails.Designer.cs">
+      <DependentUpon>FormOrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderFulfillment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderFulfillment.Designer.cs">
+      <DependentUpon>FormOrderFulfillment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrders.Designer.cs">
+      <DependentUpon>FormOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduct.Designer.cs">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProfile.Designer.cs">
+      <DependentUpon>FormProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistration.Designer.cs">
+      <DependentUpon>FormRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSeller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSeller.Designer.cs">
+      <DependentUpon>FormSeller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShop.Designer.cs">
+      <DependentUpon>FormShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gosc.cs" />
+    <Compile Include="Kategoria.cs" />
+    <Compile Include="Koszyk.cs" />
+    <Compile Include="Kupujacy.cs" />
+    <Compile Include="ListaZamowien.cs" />
+    <Compile Include="Produkt.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sprzedawca.cs" />
+    <Compile Include="Uzytkownik.cs" />
+    <Compile Include="WysylanieEMail.cs" />
+    <Compile Include="Zamowienie.cs" />
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCart.resx">
+      <DependentUpon>FormCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCategory.resx">
+      <DependentUpon>FormCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditProfile.resx">
+      <DependentUpon>FormEditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogIn.resx">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainMenu.resx">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderDetails.resx">
+      <DependentUpon>FormOrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderFulfillment.resx">
+      <DependentUpon>FormOrderFulfillment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrders.resx">
+      <DependentUpon>FormOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduct.resx">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProfile.resx">
+      <DependentUpon>FormProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistration.resx">
+      <DependentUpon>FormRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSeller.resx">
+      <DependentUpon>FormSeller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShop.resx">
+      <DependentUpon>FormShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Baza.xsc">
+      <DependentUpon>Baza.xsd</DependentUpon>
+    </None>
+    <None Include="Baza.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Baza.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Baza.xss">
+      <DependentUpon>Baza.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RobotLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RobotLogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RobotLogoBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64495.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wow.png" />
+    <None Include="Resources\wot.png" />
+    <None Include="Resources\codmw.png" />
+    <None Include="Resources\csgo.png" />
+    <None Include="Resources\fortnite.png" />
+    <None Include="Resources\godofwar.png" />
+    <Content Include="Resources\gtaV.png" />
+    <None Include="Resources\halflife.png" />
+    <None Include="Resources\hearthstone.png" />
+    <None Include="Resources\justcause.png" />
+    <None Include="Resources\killingfloor2.png" />
+    <None Include="Resources\minecraft.png" />
+    <Content Include="Resources\Overwatch.png" />
+    <None Include="Resources\seaofthieves.png" />
+    <None Include="Resources\terraria.png" />
+    <Content Include="Resources\Valorant.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
